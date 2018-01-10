@@ -2,10 +2,12 @@
   "name": "gitbugtracker",
   "version": "1.0.0",
   "description": "Project on how to leverage Git for Bug Tracking",
-  "main": "index.js",
+  "main": "./public/index.html",
   "scripts": {
-    "build": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -24,10 +26,17 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
     "webpack": "^3.10.0",
-    "webpack-dev-server": "^2.10.0"
+    "webpack-dev-server": "^2.10.0",
+    "react-scripts": "^1.0.17"
   },
   "dependencies": {
+    "auth0-js": "^9.0.2",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-bootstrap": "^0.32.0",
+    "react-dom": "^16.2.0",
+    "bootstrap": "^3.3.7",
+    "react-router":"^4.2.0",
+    "react-router-dom":"^4.2.2",
+    "axios": "^0.17.1"
   }
 }
